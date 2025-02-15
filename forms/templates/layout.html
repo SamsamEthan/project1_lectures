@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+        <style>
+            p.new1{
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <!--defined a variable section of html template, saying the block of html content could go here and this is where the heading could go-->
+        <h1>{% block heading %}{% endblock %}</h1>
+        
+        <p class="new1">this is from the layout page</p>
+        <!--I have where I would call the body block, should be inserted here-->
+
+        <button>
+            <a href="{{url_for('form')}}">Go Home</a>
+        </button>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        {%extends "layout.html" %}
+
+        {% block heading %}
+            First Page
+        {% endblock %}
+
+        {% block body %}
+            <form action="{{ url_for('hello')}}" method="post">
+                <input type="text" name="name" placeholder="Enter your name">
+                <button>Submit</button>
+            </form>
+        {% endblock %}
+        <h1>Welcome to the forms</h1>
+    </body>
+</html>
