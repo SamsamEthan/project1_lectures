@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <!--Defines general structure of the html page-->
+        <!--Basically home1.html is gonna be based on layout.html
+        in that case extend layout.html and use that as the template im going to use
+        -->
+        {% extends "layout.html" %}
+
+        {% block heading %}
+            First page
+        {% endblock %}
+
+        {% block body %}
+            <p>
+                Lorem ipsum
+            </p>
+
+            <a href="{{ url_for('more') }}"> see more</a>
+        {% endblock %}
+    </body>
+</html>

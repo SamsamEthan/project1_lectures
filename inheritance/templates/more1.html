@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>More</title>
+    </head>
+    <body>
+        <!--defines general structure of the html page-->
+        {% extends "layout.html" %}
+
+        {% block heading %}
+            More page
+        {% endblock %}
+
+        {% block body %}
+            <p>
+                donec lobortis
+            </p>
+
+            <a href="{{ url_for('home') }}"> see more</a>
+        {% endblock %}
+    </body>
+</html>

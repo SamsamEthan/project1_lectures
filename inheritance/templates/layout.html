@@ -1,0 +1,23 @@
+<!--Defined basic layout, this will be the general structure of the html pages
+better design for the website as it gets rid of the repetition when creating new html
+web pages-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+        <style>
+            .new1{
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <!--defined a variable section of html template, saying the block of html content could go here and this is where the heading could go-->
+        <h1>{% block heading %}{% endblock %}</h1>
+        
+        <p class="new1">this is from the layout page</p>
+        <!--I have where I would call the body block, should be inserted here-->
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
