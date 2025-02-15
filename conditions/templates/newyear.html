@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New year?</title>
+        <style>
+            body {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- If/else statement: whether it is New Year's or not, this is jinja notation you do not need to install jinja as long as you
+         have flask installed all features are already included-->
+        {% if new_year %}
+            <h1>Yes, Happy New Year!</h1>
+        {% else %}
+            <h1>NO</h1>
+        {% endif %}
+        <!--why is the if/else statement inside the html file and not the .py file?
+        answer: Definitely could've put it in the py file, but with more complicated websites the conditioning inside the template will be more helpful-->
+    </body>
+</html>
