@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+    </head>
+    <body>
+        <h1>{% block heading %}{%endblock%}</h1>
+
+        <button>
+            <a href="{{url_for('index')}}">Go Home</a>
+        </button>
+        {%block body%}
+        {%endblock%}
+    </body>
+</html>
